@@ -1,4 +1,4 @@
-  
+
 
 .feature { display: block; }
 
@@ -70,8 +70,8 @@ h2 { padding-left: 0; }
 
 
 .social-share-buttons { padding: 0; }
-.social-share-buttons a {
-
+a.btn {
 	display: inline-block;
-
 }
+
+.take-action a.btn { margin: 1em 0; }

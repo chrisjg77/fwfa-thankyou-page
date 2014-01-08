@@ -319,6 +319,7 @@ header.wrapper {
   box-shadow: 0 1px 1px #fff;
   text-align: center;
   margin: 0;
+  background: #f2f4f7;
 }
 
 header.wrapper { padding: 0; }
@@ -717,13 +718,11 @@ SHARE THIS
 .share-this { border-top: 1px solid #ddd; }
 
 .social-share-buttons {
-
   margin: 1em 0 1em;
   padding: 0.5em 1em;
-
 }
 
-.social-share-buttons a {
+a.btn {
   display: block;
   width: auto;
   max-width: 285px;
@@ -733,6 +732,11 @@ SHARE THIS
   background: #eee;
   color: #fff;
   text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+
+.social-share-buttons a {
+  display: block;
 }
 
 .social-share-buttons a i { 
@@ -756,6 +760,12 @@ TAKE ACTION
 */
 
 .take-action { border-top: 1px solid #ddd; }
+
+.take-action a.btn { 
+  margin: 1em; 
+  background: #da4f49;
+  box-shadow: 0 2px 0 #b32822;
+}
 
 /*
 ===============================================
