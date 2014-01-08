@@ -1,0 +1,1129 @@
+/*
+===============================================
+BASE STYLES
+===============================================
+*/
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #4488ab;
+}
+
+input[type='text'],
+select,
+textarea {
+  font-size: 1em;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+  -webkit-box-sizing:     border-box;
+  -moz-box-sizing:        border-box;
+   box-sizing:            border-box;
+}
+
+input[type='text'] {
+  width: 100%;
+  margin: 0;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+}
+
+select {
+  width: 100%;
+  height: 2.75em;
+  margin: 0;
+  font-size: 1em;
+  -webkit-appearance: menulist-button;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.paddingfix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.layout-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-list li {
+  float: left;
+}
+
+
+/*
+===============================================
+BUTTONS
+===============================================
+*/
+
+.button {
+  display: inline-block;
+  padding: 0.75em;
+  text-align: center;
+  background: rgb(234,234,234); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(234,234,234,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,234,234,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(234,234,234,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+  color: #000;
+  border: 1px solid #bbb;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+  -webkit-box-sizing:     border-box;
+  -moz-box-sizing:        border-box;
+   box-sizing:            border-box;
+}
+
+.button:hover {
+  background: rgb(238,238,238); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+.button.selected {
+  background: #666;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.3);
+  border-color: #333;
+  color: #fff;
+}
+
+.button-set .button-row {
+  margin-bottom: 2%;
+}
+
+.button-set .button-row > div {
+  float: left;
+}
+
+.button-row .button {
+  width: 100%;
+}
+
+.button-row.three-up > div,
+.button-row.one-up-field > div {
+  width: 32%;
+  margin-right: 2%;
+}
+
+.button-row.three-up > div:last-child {
+  margin-right: 0;
+}
+
+.button-row.one-up-field > div:last-child {
+  width: 66%;
+  margin: 0;
+}
+
+.button.hidden {
+  display: none;
+}
+
+
+/*
+===============================================
+TABS
+===============================================
+*/
+
+.tabs {
+  width: 100%;
+  display: table;
+  border-top: 1px solid #ddd;
+}
+
+.tabs li {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tabs li {
+  font-weight: bold;
+  color: #aaa;
+  background: #eee;
+}
+
+.tabs li.active {
+  color: #000;
+  background: transparent;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+/*
+===============================================
+SCAFFOLDING
+===============================================
+*/
+
+
+.wrapper {
+  width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em 2em;
+}
+
+.feature,
+.signup-form,
+.overall-fundraising {
+  padding: 1em;
+}
+
+.feature h2,
+.signup-form h2,
+.overall-fundraising h2,
+.candidate-fundraising h2,
+.news-and-press h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+
+.overall-fundraising,
+.candidate-fundraising,
+.news-and-press,
+.signup-form {
+  border-top: 1px solid #ddd;
+}
+
+.load-more {
+  display: none;
+  padding: 0.75em 0 0.75em 0;
+  text-align: center;
+  /*border-top: 1px solid #eee;*/
+}
+
+.load-more i {
+  font-size: 1.25em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/*
+===============================================
+NAV BAR
+===============================================
+*/
+
+header.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.nav-content {
+  display: block;
+  width: 100%;
+  height: 94px;
+  float: none;
+  border-bottom: 1px solid #d1d7e2;
+  text-align: center;
+  margin: 0;
+}
+
+header.wrapper { padding: 0; }
+
+header .inner a img { 
+  width: 158px;
+  height: 65px;
+  margin-top: 15px;
+}
+
+#primary-links ul li { display: none; }
+#primary-links ul li.last { display: block; }
+
+#primary-links .button.major { display: none; }
+
+
+/*
+===============================================
+BOOM COUNTERS
+===============================================
+*/
+
+.boom-counter-overlay,
+.progress-dividers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.progress-dividers {
+  font-size: 0.8rem;
+}
+
+.progress-dividers li {
+  height: 100%;
+  color: #999;
+  border-left: 1px solid rgba(255,255,255,0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.progress-dividers li:first-child {
+  border-left: none;
+}
+
+.progress-dividers.quarters li {
+  position: relative;
+  width: 25%;
+}
+
+.progress-dividers .divider-label {
+  position: absolute;
+  right: -1.25em;
+  bottom: -1.75em;
+}
+
+.boom-counter-base,
+.boom-counter-fill {
+  height: 0.75em;
+  -webkit-border-radius:  0.5em;
+  -moz-border-radius:     0.5em;
+   border-radius:         0.5em;
+}
+
+.boom-counter-base {
+  position: relative;
+  background: #eee;
+  border: 1px solid #ddd;
+}
+
+.boom-counter-fill {
+  width: 0;
+  background: #66A344;
+}
+
+
+/*
+===============================================
+FEATURE
+===============================================
+*/
+
+.feature {
+  display: none;
+  margin-top: 0;
+  max-height: 470px;
+  background: #999;
+  padding: 0;
+  overflow: hidden;
+}
+
+.feature img { width: 124%; margin-left: -12%; }
+
+
+/*
+===============================================
+OVERALL FUNDRAISING
+===============================================
+*/
+
+.thank-you { padding-top: 2em; padding-bottom: 2em; }
+
+.thank-you .content {
+  padding-left: 5.75em;
+  padding-right: 5.75em;
+}
+
+.thank-you .message {
+  float: left;
+  width: 60%;
+  margin-left: 4%;
+  padding-left: 0.2em;
+  margin: 0;
+}
+
+.thank-you h2 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1.7em;
+}
+
+.thank-you .additional p,
+.thank-you .message p { 
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.35em;
+}
+
+.thank-you .additional {
+  float: right;
+  min-height: 150px;
+  width: 31%;
+  margin-top: 2em;
+  margin-left: 4%;
+  padding-left: 4%;
+  border-left: 1px solid #ddd;
+}
+
+.thank-you .social-networks-desktop a { 
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-top: 0.5em;
+  font-size: 19px;
+  text-align: center;
+  color: #888;
+  border: 1px solid #888;
+  text-shadow: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.thank-you .social-networks-desktop a i { 
+  position: relative;
+  top: 7px; 
+}
+
+/*
+===============================================
+Thank You
+===============================================
+*/
+
+.candidate-fundraising {
+  background: #f2f4f7;
+  background: -moz-linear-gradient(top, #f2f4f7 0%, #f2f4f7 27%, #e8ebf0 52%, #e8ebf0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f4f7), color-stop(27%,#f2f4f7), color-stop(52%,#e8ebf0), color-stop(100%,#e8ebf0));
+  background: -webkit-linear-gradient(top, #f2f4f7 0%,#f2f4f7 27%,#e8ebf0 52%,#e8ebf0 100%);
+  background: -o-linear-gradient(top, #f2f4f7 0%,#f2f4f7 27%,#e8ebf0 52%,#e8ebf0 100%);
+  background: -ms-linear-gradient(top, #f2f4f7 0%,#f2f4f7 27%,#e8ebf0 52%,#e8ebf0 100%);
+  background: linear-gradient(to bottom, #f2f4f7 0%,#f2f4f7 27%,#e8ebf0 52%,#e8ebf0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f4f7', endColorstr='#e8ebf0',GradientType=0 );
+}
+
+.candidate-fundraising .content {
+  padding: 2em 5.75em;
+}
+
+.candidate-fundraising h2 {
+  position: relative;
+  padding: 0 3em 0 5.25em;
+  margin-top: 0.5em;
+}
+
+.candidate-fundraising h2 .header-icon,
+.more-info h2 .header-icon {
+  position: absolute;
+  top: -0.35em;
+  left: 2.75em;
+  height: 2em;
+  width: 2em;
+  background: #c9431b;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius:  50%;
+  -moz-border-radius:     50%;
+   border-radius:         50%;
+}
+
+.candidate-fundraising h2 .header-icon i,
+.more-info h2 .header-icon i {
+  position: relative;
+  top: 0.35em;
+}
+
+.candidate-fundraising h2 .view-all-link,
+.more-info h2 .view-all-link {
+  float: right;
+  font-weight: normal;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.candidates {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.candidates .next-arrow,
+.candidates .previous-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 1.3em;
+  color: #fff;
+  background: #888;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: -0.65em;
+  text-align: center;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+}
+
+.candidates .next-arrow i,
+.candidates .previous-arrow i {
+  position: relative;
+  top: 0.15em;
+}
+
+.candidates .previous-arrow {
+  left: 0;
+  opacity: 0.3;
+}
+
+.candidates .next-arrow {
+  right: 0;
+}
+
+
+.candidates li,
+.candidate-wrapper,
+.candidate-meta {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.candidates li {
+  float: left;
+  display: table;
+  width: 33.3333%;
+  padding: 1em;
+}
+
+.candidate-meta {
+  padding: 1em;
+  background: #fff;
+  -webkit-border-radius:  0.25em;
+  -moz-border-radius:     0.25em;
+   border-radius:         0.25em;
+  border: 1px solid #bbb;
+}
+
+.candidate-wrapper {
+  -webkit-border-radius:  0.35em;
+  -moz-border-radius:     0.35em;
+   border-radius:         0.35em;
+  border: 0.25em solid rgba(0,0,0,0.05);
+}
+
+.candidates .candidate-headshot,
+.candidates .candidate-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.candidates .candidate-headshot {
+  width: 20%;
+}
+
+.candidates .candidate-headshot img {
+  width: 100%;
+}
+
+.candidates .candidate-info {
+  width: 80%;
+  padding-left: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.candidates .candidate-info .candidate-name,
+.candidates .candidate-info .candidate-seat,
+.candidates .candidate-info .candidate-progress {
+  display: block;
+}
+
+.candidates .candidate-info .candidate-name {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.candidates .candidate-info .candidate-seat,
+.candidates .candidate-info .candidate-progress {
+  font-size: 0.85em;
+  color: #999;
+  margin-bottom: 0.5em;
+}
+
+.candidates .candidate-info .progress-figures {
+  color: #444;
+  font-weight: bold;
+}
+
+
+/*
+===============================================
+MORE INFO
+===============================================
+*/
+
+.more-info {
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+}
+
+.more-info .content {
+  padding-left: 5.75em;
+  padding-right: 5.75em;
+}
+
+.more-info .news-and-press h2 {
+  position: relative;
+  padding-top: 0;
+  padding-left: 2.25em;
+}
+
+.more-info .news-and-press h2 .header-icon {
+  left: -0.25em;
+}
+
+.news-and-press,
+.signup-form {
+  float: left;
+  border-top: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.news-and-press {
+  width: 65%;
+  margin-right: 4%;
+  padding-right: 4%;
+  border-right: 1px solid #ddd;
+}
+
+.signup-form {
+  width: 31%;
+}
+
+
+/*
+===============================================
+NEWS & PRESS
+===============================================
+*/
+
+.news-and-press h2 {
+  margin-bottom: 1.25em;
+  padding-top: 1em;
+}
+
+.news-content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-content .timestamp {
+  font-size: 0.75em;
+  color: #777;
+  margin-top: 0.5em;
+}
+
+.news-content li {
+  color: #333;
+  padding: 0.75em 0;
+  border-top: 1px solid #eee;
+}
+
+.news-content li:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.news-content .tweet-content,
+.news-content .news-title {
+  font-size: 0.8em;
+}
+
+.news-content .twitter-username {
+  color: #444;
+  font-weight: bold;
+}
+
+/*
+===============================================
+SIGNUP FORM
+===============================================
+*/
+
+.signup-form {
+  padding: 0;
+}
+
+.signup-form h2 {
+  font-size: 1em;
+}
+
+.form-row {
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-column {
+  padding-right: 0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+   box-sizing:        border-box;
+}
+
+.form-column:last-child {
+  padding-right: 0;
+}
+
+.form-column.zip,
+.form-column.submit {
+  float: left;
+}
+
+.form-column.zip {
+  width: 70%;
+}
+
+.form-column.submit {
+  width: 30%;
+}
+
+.form-column.submit .button {
+  width: 100%;
+}
+
+
+/*
+===============================================
+MEDIA QUERIES
+===============================================
+*/
+
+@media (max-width: 840px) {
+
+  .overall-fundraising,
+  .more-info .news-content,
+  .more-info .signup-form {
+    font-size: 0.85em;
+  }
+
+  .more-info .news-and-press {
+    width: 60%;
+  }
+
+  .more-info .signup-form {
+    width: 36%;
+  }
+
+  .more-info .news-and-press h2 {
+    font-size: 1.25em;
+  }
+
+  .candidates li {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  /*
+  ========================= 
+  BASE
+  ========================= 
+  */
+
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  /*
+  ========================= 
+  SCAFFOLDING
+  ========================= 
+  */
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .load-more {
+    display: block;
+  }
+
+  .feature h2,
+  .signup-form h2,
+  .overall-fundraising h2,
+  .candidate-fundraising h2,
+  .news-and-press h2 {
+    /*text-align: center;*/
+    padding: 0.5em 0 0 3em;
+  }
+
+  .candidate-fundraising h2 .header-icon {
+    left: 0.75em;
+    top: 0.25em;
+    font-size: 0.9em;
+  }
+
+  .overall-fundraising,
+  .more-info .news-content {
+    font-size: 1em;
+  }
+
+  /*
+  ========================= 
+  NAV BAR
+  ========================= 
+  */
+
+  .nav-spacer {
+    display: none;
+  }
+
+  /*
+  ========================= 
+  FEATURE
+  ========================= 
+  */
+
+  .feature {
+    height: 8em; /* Temp */
+    background: #999;
+  }
+
+  /*
+  ========================= 
+  OVERALL FUNDRAISING
+  ========================= 
+  */
+
+  .overall-fundraising-header,
+  .overall-fundraising .boom-counter {
+    width: 100%;
+  }
+
+  .overall-fundraising .donate-button {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  .overall-fundraising .donate-button a {
+    width: 100%;
+    font-size: 1.1em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    -webkit-border-radius:  1.5em;
+    -moz-border-radius:     1.5em;
+    -border-radius:         1.5em;
+  }
+
+  .overall-fundraising-header {
+    font-size: 0.9em;
+  }
+
+  .overall-fundraising .statistics {
+    width: 100%;
+  }
+
+  .overall-fundraising .fundraising-categories {
+    display: none;
+  }
+
+  .overall-fundraising .masthead {
+    display: none;
+  }
+
+  .overall-fundraising .boom-counter-goal-highlight.outer {
+    display: none;
+  }
+
+  /*
+  ========================= 
+  CANDIDATE FUNDRAISING
+  ========================= 
+  */
+
+  .candidate-fundraising {
+    background: #fff;
+  }
+
+  .candidates {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .candidate-fundraising .content {
+    padding: 0;
+  }
+
+  .candidate-fundraising h2 .view-all-link {
+    display: none;
+  }
+
+  .candidates .next-arrow,
+  .candidates .previous-arrow {
+    display: none;
+  }
+
+  .candidates li {
+    float: none;
+    width: 100%;
+  }
+
+  .candidates li:nth-child(3) {
+    padding-top: 0.5em;
+    border-top: none;
+  }
+
+  .candidates li:nth-child(even) {
+    background: #f7f7f7;
+  }
+
+  .candidate-wrapper,
+  .candidate-meta {
+    border: none;
+  }
+
+  .candidate-meta {
+    padding: 0;
+    background: transparent;
+  }
+
+  /*
+  ========================= 
+  MORE INFO
+  ========================= 
+  */
+
+  .more-info {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .more-info .content {
+    padding: 0;
+  }
+
+  .more-info .news-and-press,
+  .more-info .signup-form {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .more-info .news-and-press {
+    padding-right: 0;
+  }
+
+  /*
+  ========================= 
+  NEWS & PRESS
+  ========================= 
+  */
+
+  .news-and-press {
+    border-top: 1px solid #ddd;
+  }
+
+  .news-content li {
+    padding: 1em;
+  }
+
+  .news-content .tweet-content,
+  .news-content .news-title {
+    font-size: 0.9em;
+  }
+
+  .news-content li:nth-child(even) {
+    background: #f7f7f7;
+  }
+
+  .more-info .news-and-press h2 {
+    padding-left: 3.25em;
+    padding-top: 1em;
+  }
+
+  .more-info .news-and-press h2 .view-all-link {
+    display: none;
+  }
+
+  .more-info .news-and-press h2 .header-icon {
+    left: 0.75em;
+    top: 0.65em;
+  }
+
+  /*
+  ========================= 
+  SIGNUP FORM
+  ========================= 
+  */
+
+  .signup-form {
+    background: #f7f7f7;
+    padding: 1em;
+    border-top: 1px solid #ddd;
+  }
+
+  .signup-form h2 {
+    font-size: 1.15em;
+    padding: 0;
+    text-align: center;
+  }
+
+  .form-row {
+    font-size: 1em;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .feature { display: block; }
+
+  .nav-bar {
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav-spacer {
+    height: 1.25em;
+    background: rgba(255,255,255,0.6);
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+  }
+
+  .nav-content {
+    height: 4em;
+    background: #ebeef2;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin-top: 1.25em;
+    text-align: left;
+  }
+
+  .nav-content img { width: 224px; }
+
+  header .inner a img { 
+    width: 224px;
+    height: auto;
+    margin-top: -15px;
+    margin-left: 1em;
+  }
+
+  .overall-fundraising {
+    border-top: 1px solid #ddd;
+  }
+
+  #primary-links .button.major { display: block; }
+
+  .button.major {
+    float: right;
+    background: #c9431b;
+    font-family: 'Raleway',sans-serif;
+    min-height: 36px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 36px;
+    color: #fff;
+    padding: 0 20px;
+    border: none;
+    margin-right: 2%;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .span3 { width: 30%; float: left; }
+  .span9 { width: 70%; float: left; }
+
+  .thank-you { padding-top: 7em;  }
+
+
+}
+
+
+
+
