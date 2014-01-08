@@ -75,3 +75,7 @@ a.btn {
 }
 
 .take-action a.btn { margin: 1em 0; }
+
+.thank-you .content {
+  padding: 0 2em;
+}

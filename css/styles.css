@@ -432,15 +432,12 @@ OVERALL FUNDRAISING
 .thank-you { padding-top: 1em; padding-bottom: 1em; }
 
 .thank-you h1 {
-
   color: #66A344;
   text-shadow: 0 1px 0px #3d721f;
-
 }
 
 .thank-you .content {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0 1.5em;
 }
 
 .thank-you .message {
@@ -738,6 +735,8 @@ a.btn {
   background: #eee;
   color: #fff;
   text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  -webkit-transition: all .15s;
+  transition: all .15s;
 }
 
 
