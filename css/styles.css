@@ -242,8 +242,13 @@ SCAFFOLDING
 }
 
 .disclaimer .content { padding: 0 2em; }
-.disclaimer .content p { padding: 0; }
-.disclaimer ol { font-weight: 300; line-height: 1.35em; }
+.disclaimer .content p { padding: 0;  }
+.disclaimer ol { 
+  font-weight: 300; 
+  line-height: 1.35em; 
+  font-size: 0.85em; 
+  padding-left: 1.75em;
+}
 .disclaimer ol li { margin: 0.5em 0; }
 
 .content p.paidforby {
@@ -252,6 +257,7 @@ SCAFFOLDING
   border: 1px solid #333;
   text-align: center;
   line-height: 1.5;
+  font-size: 0.85em;
 }
 
 .content {
