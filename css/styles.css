@@ -215,13 +215,30 @@ SCAFFOLDING
 
 .wrapper {
   width: 100%;
+  margin: 0 auto;
 }
 
 .wrapper.interaction {
-  margin: 2em auto;
-  max-width: 940px;
+  max-width: 740px;
   background: #fff;
   border-radius: 0.25em;
+}
+
+.wrapper.disclaimer {
+  max-width: 740px;
+  color: #333;
+}
+
+.disclaimer .content { padding: 0 2em; }
+.disclaimer ol { font-weight: 300; line-height: 1.35em; }
+.disclaimer ol li { margin: 0.5em 0; }
+
+.content p.paidforby {
+  margin: 3em 0;
+  padding: 1em;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .content {
@@ -394,6 +411,13 @@ OVERALL FUNDRAISING
 
 .thank-you { padding-top: 1em; padding-bottom: 1em; }
 
+.thank-you h1 {
+
+  color: #66A344;
+  text-shadow: 0 1px 0px #3d721f;
+
+}
+
 .thank-you .content {
   padding-left: 2em;
   padding-right: 2em;
@@ -415,10 +439,9 @@ OVERALL FUNDRAISING
   margin-bottom: 1.7em;
 }
 
-.thank-you .additional p,
-.thank-you .message p { 
-  padding: 0;
-  margin: 0;
+.content p { 
+  padding: 0 0 0 0.5em;
+  margin: 1em 0;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.35em;
@@ -468,12 +491,14 @@ Thank You
 }
 
 .candidate-fundraising .content {
-  padding: 2em 5.75em;
+  padding: 2em 1em;
 }
+
+.candidate-fundraising p { padding-left: 1.5em; }
 
 .candidate-fundraising h2 {
   position: relative;
-  padding: 0 3em 0 5.25em;
+  padding: 0 3em 0 1em;
   margin-top: 0.5em;
 }
 
@@ -672,99 +697,19 @@ MORE INFO
 
 /*
 ===============================================
-NEWS & PRESS
+SHARE THIS
 ===============================================
 */
 
-.news-and-press h2 {
-  margin-bottom: 1.25em;
-  padding-top: 1em;
-}
-
-.news-content {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.news-content .timestamp {
-  font-size: 0.75em;
-  color: #777;
-  margin-top: 0.5em;
-}
-
-.news-content li {
-  color: #333;
-  padding: 0.75em 0;
-  border-top: 1px solid #eee;
-}
-
-.news-content li:first-child {
-  padding-top: 0;
-  border-top: none;
-}
-
-.news-content .tweet-content,
-.news-content .news-title {
-  font-size: 0.8em;
-}
-
-.news-content .twitter-username {
-  color: #444;
-  font-weight: bold;
-}
+.share-this { border-top: 1px solid #ddd; }
 
 /*
 ===============================================
-SIGNUP FORM
+TAKE ACTION
 ===============================================
 */
 
-.signup-form {
-  padding: 0;
-}
-
-.signup-form h2 {
-  font-size: 1em;
-}
-
-.form-row {
-  margin-bottom: 0.5em;
-  font-size: 0.8em;
-}
-
-.form-row:last-child {
-  margin-bottom: 0;
-}
-
-.form-column {
-  padding-right: 0.5em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-   box-sizing:        border-box;
-}
-
-.form-column:last-child {
-  padding-right: 0;
-}
-
-.form-column.zip,
-.form-column.submit {
-  float: left;
-}
-
-.form-column.zip {
-  width: 70%;
-}
-
-.form-column.submit {
-  width: 30%;
-}
-
-.form-column.submit .button {
-  width: 100%;
-}
-
+.take-action { border-top: 1px solid #ddd; }
 
 /*
 ===============================================
@@ -792,9 +737,11 @@ MEDIA QUERIES
     font-size: 1.25em;
   }
 
+  /*
   .candidates li {
     width: 50%;
   }
+  */
 
 }
 
@@ -1103,12 +1050,10 @@ MEDIA QUERIES
   }
 
   .wrapper.interaction {
-
+    margin: 2em auto;
     border: 1px solid #ddd;
 
   }
-
-  .thank-you { padding-top: 7em;  }
 
 
 }
