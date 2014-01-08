@@ -1,0 +1,77 @@
+  
+
+.feature { display: block; }
+
+header .inner a img { 
+text-align: center;
+}
+
+.overall-fundraising {
+border-top: 1px solid #ddd;
+}
+
+#primary-links .button.major { display: none; }
+
+.button.major {
+float: right;
+background: #c9431b;
+font-family: 'Raleway',sans-serif;
+min-height: 36px;
+display: inline-block;
+text-decoration: none;
+line-height: 36px;
+color: #fff;
+padding: 0 20px;
+border: none;
+margin-right: 2%;
+font-size: 1.3em;
+font-weight: bold;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+vertical-align: middle;
+cursor: pointer;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.6);
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-ms-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;
+}
+
+.wrapper.interaction {
+	margin: 2em auto;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
+}
+
+.wrapper.disclaimer { border: none; }
+
+
+h2 { padding-left: 0; }
+
+.content p { 
+  padding: 0 0 0 0.1em;
+  margin: 0 0 1em;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.35em;
+}
+
+.candidate-fundraising .content h2 {
+	padding: 0.5em 0 0 1em;
+}
+
+.candidate-fundraising .content p {
+	padding-left: 1.5em;
+}
+
+
+.social-share-buttons { padding: 0; }
+.social-share-buttons a {
+
+	display: inline-block;
+
+}
